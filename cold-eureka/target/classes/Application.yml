@@ -1,0 +1,13 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: cold-eureka-server
+eureka:
+  instance:
+    hostname: eureka.zhangzhiyi.com
+  client:
+    service-url:
+      defaultZone: http://eureka.zhangzhiyi.com:8001/eureka
+    register-with-eureka: true
+    fetch-registry: false
